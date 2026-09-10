@@ -1,0 +1,1 @@
+{"name":"ha-simple-vacuum-card","version":"0.3.0","description":"Home Assistant Lovelace custom card","license":"MIT","scripts":{"check":"node --check ha-simple-vacuum-card.js"}}
