@@ -1,4 +1,4 @@
-const VERSION = "0.3.1";
+const VERSION = "0.4.0";
 
 class HASimpleVacuumCard extends HTMLElement {
   constructor() {
@@ -141,7 +141,7 @@ class HASimpleVacuumCard extends HTMLElement {
       .chip{display:flex;align-items:center;gap:5px;padding:5px 10px;border-radius:10px;font-size:10px;font-weight:700;background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn)}
       .section-title{margin:14px 0 8px;color:var(--secondary-text-color);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.06em}
       .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-      .stat{padding:8px;border:1px solid var(--edge);border-radius:10px;text-align:center}
+      .stat{padding:8px;border:1px solid color-mix(in srgb,var(--accent) 16%,transparent);border-left:3px solid var(--accent);border-radius:10px;background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 6%,transparent),transparent 55%);box-shadow:0 4px 12px rgba(0,0,0,.08);text-align:center}
       .stat span{display:block;color:var(--secondary-text-color);font-size:8px;text-transform:uppercase;font-weight:700}
       .stat b{display:block;margin-top:3px;font-size:13px}
       .success{margin-top:8px}
@@ -149,7 +149,7 @@ class HASimpleVacuumCard extends HTMLElement {
       .track{height:6px;margin-top:4px;border-radius:6px;overflow:hidden;background:rgba(127,145,165,.18)}
       .track i{display:block;height:100%;background:linear-gradient(90deg,var(--danger),var(--good))}
       .controls{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:14px}
-      .controls button{display:flex;flex-direction:column;align-items:center;gap:4px;padding:9px 2px;border:1px solid var(--edge);border-radius:10px;background:transparent;color:var(--secondary-text-color);font-size:9px;font-weight:700;cursor:pointer}
+      .controls button{display:flex;flex-direction:column;align-items:center;gap:4px;padding:9px 2px;border:1px solid color-mix(in srgb,var(--accent) 16%,var(--edge));border-radius:10px;background:transparent;color:var(--secondary-text-color);font-size:9px;font-weight:700;cursor:pointer}
       .controls button:hover{border-color:var(--accent);color:var(--primary-text-color)}
       .controls button.primary{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--primary-text-color)}
       .controls ha-icon{--mdc-icon-size:18px}
