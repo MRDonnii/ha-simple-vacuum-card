@@ -1,4 +1,4 @@
-const VERSION = "0.3.0";
+const VERSION = "0.3.1";
 
 class HASimpleVacuumCard extends HTMLElement {
   constructor() {
@@ -121,7 +121,7 @@ class HASimpleVacuumCard extends HTMLElement {
         ? (successful / total) * 100
         : undefined;
     this.shadowRoot.innerHTML = `<style>
-      :host{display:block;--accent:var(--dashboard-accent,#62b5ff);--good:var(--dashboard-success,#54d9aa);--warn:var(--dashboard-warning,#ffbd59);--danger:var(--dashboard-danger,#ff667a);--edge:var(--dashboard-border-neutral,rgba(127,145,165,.2))}
+      :host{display:block;--accent:var(--dashboard-accent, var(--primary-color, #62b5ff));--good:var(--dashboard-success, var(--success-color, #54d9aa));--warn:var(--dashboard-warning, var(--warning-color, #ffbd59));--danger:var(--dashboard-danger, var(--error-color, #ff667a));--edge:var(--dashboard-border-neutral, var(--divider-color, rgba(127,145,165,.2)))}
       *{box-sizing:border-box}
       ha-card{position:relative;overflow:hidden;padding:16px;border-left:4px solid var(--accent);border-radius:18px;background:var(--ha-card-background,var(--card-background-color));color:var(--primary-text-color);box-shadow:var(--ha-card-box-shadow)}
       ha-card.has-error{border-left-color:var(--danger);animation:pulse-danger 1.8s ease-in-out infinite}
